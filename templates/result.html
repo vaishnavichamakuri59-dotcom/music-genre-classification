@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>🎶 Predicted Genre</h2>
+
+        <p class="genre-text">{{ genre }}</p>
+
+        {% if genre == "classical" %}
+            <img src="{{ url_for('static', filename='images/classical.jpg') }}" class="genre-image">
+        {% elif genre == "Jazz" %}
+            <img src="{{ url_for('static', filename='images/jazz.jpg') }}" class="genre-image">
+        {% elif genre == "Pop" %}
+            <img src="{{ url_for('static', filename='images/pop.jpg') }}" class="genre-image">
+        {% elif genre == "Rock" %}
+            <img src="{{ url_for('static', filename='images/rock.jpg') }}" class="genre-image">
+        {% endif %}
+
+        <br><br>
+
+        <a href="{{ url_for('thankyou') }}">
+            <button>Finish</button>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

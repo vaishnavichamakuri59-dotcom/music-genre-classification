@@ -1,16 +1,16 @@
-# 🎵 Music Genre Classification
+# Music Genre Classification
 
-## 📌 Project Overview
+## Project Overview
 This project classifies music into different genres using Machine Learning techniques.
 Users can upload an audio file and the system predicts its genre.
 
-## 🚀 Features
+## Features
 - Upload audio file
 - Feature extraction using Librosa
 - Genre prediction using trained ML model
 - Web interface using Flask
 
-## 🛠 Technologies Used
+## Technologies Used
 - Python
 - Flask
 - Librosa
@@ -18,7 +18,7 @@ Users can upload an audio file and the system predicts its genre.
 - NumPy
 - Pandas
 
-## ▶️ How to Run
+## How to Run
 
 1. Clone the repository
 2. Install dependencies:
